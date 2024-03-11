@@ -1,0 +1,160 @@
+body {
+  font-family: sans-serif;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  margin: 0;
+  background-color: rgb(22, 22, 151);
+  padding: 12px 0 12px 180px;
+  border-radius: 20px 20px 0 0;
+  width: 725px;
+}
+
+form {
+  margin-left: 28px;
+  padding-top: 20px;
+}
+
+.subTitleA {
+  margin: 0 0 -15px 0;
+  font-size: 20px;
+  font-style: italic;
+}
+
+.activeTemp {
+  margin: 0 0 5px 0;
+}
+
+.activeTempInfo {
+  font-size: 17px;
+  margin-top: -10px;
+}
+
+.appBody {
+  margin-top: 50px;
+  height: 250px;
+  align-items: center;
+}
+
+.backgroundBody {
+  height: 480px;
+  width: 725px;
+  margin-top: 10em;
+  background-color: rgb(224, 237, 248);
+  border-color: rgb(179, 211, 238);
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 56, 0.2);
+}
+
+.currentCityIcon {
+  position: absolute;
+  font-size: 100px;
+  margin: 0;
+  padding: 20px 30px 20px 30px;
+  background-color: white;
+  box-shadow: 0 0 20px rgba(0, 0, 56, 0.2);
+  border-radius: 25%;
+  top: 75px;
+}
+
+.currentTemp {
+  margin-top: 8px;
+  position: relative;
+  text-align: center;
+  color: rgb(5, 25, 104);
+  font-size: 55px;
+  padding: 0 0 0 35px;
+}
+
+.line {
+  position: absolute;
+  margin: -190px 0 0 95px;
+  background-color: darkblue;
+  padding-left: 2px;
+  height: 200px;
+}
+
+.thunder,
+.cloudy,
+.sunny {
+  font-size: 28px;
+  color: rgb(60, 80, 158);
+  margin: 0;
+}
+
+.tomorrowTemp,
+.theNextDayTemp,
+.theDayAfterTemp {
+  font-size: 22px;
+  color: rgb(60, 80, 158);
+}
+
+.col.tomorrowWeather,
+.col.theNextDayWeather,
+.col.theDayAfterWeather {
+  text-align: center;
+}
+
+.thunderEmoji,
+.cloudyEmoji,
+.sunnyEmoji {
+  font-size: 60px;
+  margin: 0;
+}
+
+.citySearchBar {
+  padding: 14px;
+  width: 500px;
+  border-style: hidden;
+  border-radius: 20px 0 0 20px;
+}
+
+#search-form {
+  width: fit-content;
+  padding-right: 0;
+}
+
+#search-city {
+  font-weight: 600;
+  color: white;
+  background-color: darkblue;
+  border-style: none;
+  padding: 15px;
+  margin-left: -5px;
+}
+
+#search-city:hover {
+  background-color: #0b5ed7;
+  transition: ease-in-out 0.2s;
+}
+
+#current-form {
+  width: fit-content;
+  align-items: end;
+  padding: 20px 0 0 0;
+  margin-left: 0;
+}
+
+#current-city {
+  font-style: oblique;
+  color: white;
+  background-color: rgb(0, 0, 73);
+  border-style: none;
+  border-radius: 0 20px 20px 0;
+  padding: 15px;
+}
+
+#current-city:hover {
+  color: white;
+  background-color: #0b5ed7;
+  transition: ease-in-out 0.2s;
+}

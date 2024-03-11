@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weather App</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+      rel="stylesheet" 
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+      crossorigin="anonymous"
+    >
+    <script>src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"; 
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"; 
+      crossorigin="anonymous"</script>
+
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+
+  <body>
+    <section id="weather-app">
+      <div class="backgroundBody">
+
+        <div class="currentCityIcon">🌦️</div>
+
+          <h1 class="appTitle" id="this-city">NEW YORK CITY</h1>
+
+          <div class="row appBody">
+
+            <div id="day0" class="col currentTemp">
+              <p class="subTitleA"><strong>Today is</strong></p>
+              <p class="activeTemp">
+                <strong>XX°F</strong>
+              </p>
+              <div class="activeTempInfo">
+                <div id="active-temp-date">Weekday xx:xx</div> 
+                <div id="condition-description">Condition</div>
+                <div id="humidity-percentage">Humidity</div>
+                <div id="active-temp-wind-speed">Wind Speed</div>
+              </div>
+              <span class="line"></span>
+            </div>
+            
+            <div id="day1" class="col tomorrowWeather">
+              <p class="tomorrow"></p>
+              <p class="thunder">
+                <strong>Thunder</strong>
+              </p>
+                <p class="thunderEmoji">⛈️</p>
+                <p class="tomorrowTemp">82°F</p>
+            </div>
+
+            <div id="day2" class="col theNextDayWeather"> 
+                <p class="theNextDay"></p>
+                <p class="cloudy">
+                  <strong>Cloudy</strong>
+                </p>  
+                  <p class="cloudyEmoji">⛅</p>
+                  <p class="theNextDayTemp">85°F</p>  
+            </div>
+
+            <div id="day3" class="col theDayAfterWeather">
+              <p class="theDayAfter"></p>
+              <p class="sunny">
+                  <strong>Sunny</strong>
+                </p>
+                  <p class="sunnyEmoji">☀️</p>
+                  <p class="theDayAfterTemp">88°F</p>   
+            </div>
+          </div>
+          
+          <div class="row"> 
+            <form id="search-form">
+              <input type="text" placeholder="Search a city" name="city" 
+                class="citySearchBar" id="search-city-input" autofocus required />
+              <input type="submit" value="Search" id="search-city" />
+            </form>
+            <form id="current-form">
+              <input type="submit" value="Current" id="current-city" 
+                onsubmit="setTimeout(function () { window.location.reload(); }, 10)" />
+            </form>
+          </div>
+            
+        </div>    
+
+      </div>
+    </section>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
