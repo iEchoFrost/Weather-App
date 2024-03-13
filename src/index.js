@@ -107,6 +107,9 @@ document.querySelector("#search-form").addEventListener("submit", search);
 function currentCityWeather(response) {
   console.log(response.data);
 
+  document.querySelector("#this-city").innerHTML =
+    response.data.city.toUpperCase();
+
   document.querySelector(`.activeTemp`).innerHTML = `${Math.round(
     response.data.temperature.current
   )}°F`;

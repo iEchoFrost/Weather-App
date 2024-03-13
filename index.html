@@ -23,9 +23,9 @@
     <section id="weather-app">
       <div class="backgroundBody">
 
-        <div class="currentCityIcon">🌦️</div>
+        <div class="currentCityIcon">⚫</div>
 
-          <h1 class="appTitle" id="this-city">NEW YORK CITY</h1>
+          <h1 class="appTitle" id="this-city">THIS CITY</h1>
 
           <div class="row appBody">
 
@@ -46,48 +46,57 @@
             <div id="day1" class="col tomorrowWeather">
               <p class="tomorrow"></p>
               <p class="thunder">
-                <strong>Thunder</strong>
+                <strong>Weather</strong>
               </p>
-                <p class="thunderEmoji">⛈️</p>
-                <p class="tomorrowTemp">82°F</p>
+                <p class="thunderEmoji">⚫</p>
+                <p class="tomorrowTemp">XX</p>
             </div>
 
             <div id="day2" class="col theNextDayWeather"> 
                 <p class="theNextDay"></p>
                 <p class="cloudy">
-                  <strong>Cloudy</strong>
+                  <strong>Weather</strong>
                 </p>  
-                  <p class="cloudyEmoji">⛅</p>
-                  <p class="theNextDayTemp">85°F</p>  
+                  <p class="cloudyEmoji">⚫</p>
+                  <p class="theNextDayTemp">XX</p>  
             </div>
 
             <div id="day3" class="col theDayAfterWeather">
               <p class="theDayAfter"></p>
               <p class="sunny">
-                  <strong>Sunny</strong>
+                  <strong>Weather</strong>
                 </p>
-                  <p class="sunnyEmoji">☀️</p>
-                  <p class="theDayAfterTemp">88°F</p>   
+                  <p class="sunnyEmoji">⚫</p>
+                  <p class="theDayAfterTemp">XX</p>   
             </div>
           </div>
           
           <div class="row"> 
             <form id="search-form">
               <input type="text" placeholder="Search a city" name="city" 
-                class="citySearchBar" id="search-city-input" autofocus required />
+              class="citySearchBar" id="search-city-input" autofocus required />
               <input type="submit" value="Search" id="search-city" />
             </form>
             <form id="current-form">
               <input type="submit" value="Current" id="current-city" 
-                onsubmit="setTimeout(function () { window.location.reload(); }, 10)" />
+              onsubmit="setTimeout(function () { window.location.reload(); }, 10)" />
             </form>
           </div>
+
+          <footer>
+            <p>
+              This project was coded by
+              <a href="https://github.com/iEchoFrost" target="_blank">Megan Gelin</a> and is
+              <a href="https://github.com/iEchoFrost/Weather-App" target="_blank"> on GitHub</a> and
+              <a href="https://iecho-weather-app.netlify.app" target="_blank">hosted on Netlify</a>
+            </p>
+          </footer>
             
         </div>    
 
       </div>
     </section>
 
-    <script src="src/index.js"></script>
+    <script src="#"></script>
   </body>
 </html>

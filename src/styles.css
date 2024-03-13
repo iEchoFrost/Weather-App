@@ -24,6 +24,13 @@ form {
   padding-top: 20px;
 }
 
+footer {
+  text-align: center;
+  color: rgba(39, 33, 66, 0.4);
+  padding-top: 15px;
+  font-size: smaller;
+}
+
 .subTitleA {
   margin: 0 0 -15px 0;
   font-size: 20px;
