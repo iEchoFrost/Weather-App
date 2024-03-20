@@ -16,6 +16,10 @@ window.onload = function currentTime() {
   let hour = date.getHours();
   let minutes = date.getMinutes();
 
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
+
   document.querySelector(
     "#active-temp-date"
   ).innerHTML = `${day} ${hour}:${minutes}`;
@@ -65,6 +69,8 @@ function search(event) {
 
 document.querySelector("#search-form").addEventListener("submit", search);
 
+let city = prompt(`Enter your city?`);
+
 function currentCityWeather(response) {
   console.log(response.data);
 
@@ -93,7 +99,7 @@ function currentCityWeather(response) {
 
 axios
   .get(
-    `https://api.shecodes.io/weather/v1/current?query=new-york&key=a4321774f3fb52faa9dd8090c3do4t41&units=imperial`
+    `https://api.shecodes.io/weather/v1/current?query=${city}&key=a4321774f3fb52faa9dd8090c3do4t41&units=imperial`
   )
   .then(currentCityWeather);
 
