@@ -46,7 +46,7 @@ footer {
   margin-top: -10px;
 }
 
-.appBody {
+.weatherBody {
   margin-top: 50px;
   height: 250px;
   align-items: center;
@@ -90,30 +90,29 @@ footer {
   height: 200px;
 }
 
-.thunder,
-.cloudy,
-.sunny {
-  font-size: 28px;
+.day1Condition,
+.day2Condition,
+.day3Condition {
   color: rgb(60, 80, 158);
   margin: 0;
 }
 
-.tomorrowTemp,
-.theNextDayTemp,
-.theDayAfterTemp {
+.day1Temp,
+.day2Temp,
+.day3Temp {
   font-size: 22px;
   color: rgb(60, 80, 158);
 }
 
-.col.tomorrowWeather,
-.col.theNextDayWeather,
-.col.theDayAfterWeather {
+.col.day1Weather,
+.col.day2Weather,
+.col.day3Weather {
   text-align: center;
 }
 
-.thunderEmoji,
-.cloudyEmoji,
-.sunnyEmoji {
+.day1Emoji,
+.day2Emoji,
+.day3Emoji {
   font-size: 60px;
   margin: 0;
 }
