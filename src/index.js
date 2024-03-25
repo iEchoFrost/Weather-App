@@ -69,7 +69,7 @@ function search(event) {
 
 document.querySelector("#search-form").addEventListener("submit", search);
 
-let city = prompt(`Enter your city?`);
+let city = prompt(`Enter your city.`);
 
 function currentCityWeather(response) {
   console.log(response.data);
